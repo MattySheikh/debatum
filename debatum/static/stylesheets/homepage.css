@@ -1,5 +1,22 @@
-/* line 3, ../../sass/homepage.scss */
-.welcome {
-  margin: 0 auto;
-  color: #63cb31;
+/* Welcome */
+/* line 4, ../../sass/homepage.scss */
+.welcome-wrapper {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 9, ../../sass/homepage.scss */
+.welcome-description {
+  font-size: 25px;
+}
+
+/* line 13, ../../sass/homepage.scss */
+.big-welcome {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* line 18, ../../sass/homepage.scss */
+.welcome-buttons {
+  padding: 15px;
 }

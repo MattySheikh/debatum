@@ -1,22 +1,44 @@
 @import "variables";
 
+/* Body */
 body {
 	margin: 0;
 	font-size: 16px;
 	font-family: $baseFont, sans-serif;
-	color: $baseDark;
-	background: url('/static/images/background.png');
+	background-color: $baseBlack;
+	color: $baseWhite;
 }
 
+e {
+	color: $baseGreen;
+	font-weight: bold;
+}
+
+/* Buttons */
 input[type="button"] {
 	cursor: pointer;
 }
 
+.standard-button {
+	border-radius: 5px;
+	border: 1px solid $baseBlack;
+	color: $baseWhite;
+	background-color: $baseDarkBlue;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.standard-button:hover {
+	transition: .2s;
+	background-color: $baseBlack;
+}
+
+/* Header */
 #header {
-	padding: 15px;
-	background-color: $baseGreen;
-	color: $baseDark;
-	border-bottom: 1px solid $baseBorder;
+	padding: 5px;
+	height: 50px;
+	color: $baseWhite;
+	border-bottom: 1px solid $baseDarkBlue;
 }
 
 #header-bar {
@@ -24,24 +46,52 @@ input[type="button"] {
 	margin: 0 auto;
 }
 
-.name {
+.header-inline {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-name {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 50%;
 	vertical-align: middle;
 	font-size: 30px;
+	padding-left: 15px;
 }
 
-.standard-button {
-	border-radius: 5px;
-	border: 1px solid $baseDark;
-	color: $baseDark;
-	background-color: $baseGreen;
-	padding: 5px;
-	font-size: 14px;
+.header-action {
+	cursor: pointer;
 }
 
-.standard-button:hover {
-	transition: .3s;
-	background-color: $baseMidGreen;
+#logo-svg {
+	height: 50px;
+	fill: $baseGreen;
+}
+
+.header-left {
+	float: left;
+}
+
+.header-right {
+	float: right;
+	padding-top: 12px;	
+}
+
+#header-log-in:after {
+	content: "•";
+	margin: 0 5px 0 8px;
+}
+
+/* Content */
+#content {
+	background-color: $baseWhite;
+	color: $baseBlack;
+	padding: 15px;
+}
+
+/* Footer */
+#footer {
+	width: 100%;
+	text-align: center;
 }

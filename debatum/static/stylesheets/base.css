@@ -1,52 +1,112 @@
-/* line 3, ../../sass/base.scss */
+@charset "UTF-8";
+/* Body */
+/* line 4, ../../sass/base.scss */
 body {
   margin: 0;
   font-size: 16px;
-  font-family: "Hind", sans-serif;
-  color: #151515;
-  background: url("/static/images/background.png");
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #1f2026;
+  color: #f8f7f1;
 }
 
-/* line 11, ../../sass/base.scss */
+/* line 12, ../../sass/base.scss */
+e {
+  color: #63995f;
+  font-weight: bold;
+}
+
+/* Buttons */
+/* line 18, ../../sass/base.scss */
 input[type="button"] {
   cursor: pointer;
 }
 
-/* line 15, ../../sass/base.scss */
-#header {
-  padding: 15px;
-  background-color: #63cb31;
-  color: #151515;
-  border-bottom: 1px solid #2f681f;
+/* line 22, ../../sass/base.scss */
+.standard-button {
+  border-radius: 5px;
+  border: 1px solid #1f2026;
+  color: #f8f7f1;
+  background-color: #2f4349;
+  padding: 5px;
+  font-size: 14px;
 }
 
-/* line 22, ../../sass/base.scss */
+/* line 31, ../../sass/base.scss */
+.standard-button:hover {
+  transition: .2s;
+  background-color: #1f2026;
+}
+
+/* Header */
+/* line 37, ../../sass/base.scss */
+#header {
+  padding: 5px;
+  height: 50px;
+  color: #f8f7f1;
+  border-bottom: 1px solid #2f4349;
+}
+
+/* line 44, ../../sass/base.scss */
 #header-bar {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 27, ../../sass/base.scss */
-.name {
+/* line 49, ../../sass/base.scss */
+.header-inline {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 54, ../../sass/base.scss */
+.header-name {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 50%;
   vertical-align: middle;
   font-size: 30px;
+  padding-left: 15px;
 }
 
-/* line 35, ../../sass/base.scss */
-.standard-button {
-  border-radius: 5px;
-  border: 1px solid #151515;
-  color: #151515;
-  background-color: #63cb31;
-  padding: 5px;
-  font-size: 14px;
+/* line 63, ../../sass/base.scss */
+.header-action {
+  cursor: pointer;
 }
 
-/* line 44, ../../sass/base.scss */
-.standard-button:hover {
-  transition: .3s;
-  background-color: #51a628;
+/* line 67, ../../sass/base.scss */
+#logo-svg {
+  height: 50px;
+  fill: #63995f;
+}
+
+/* line 72, ../../sass/base.scss */
+.header-left {
+  float: left;
+}
+
+/* line 76, ../../sass/base.scss */
+.header-right {
+  float: right;
+  padding-top: 12px;
+}
+
+/* line 81, ../../sass/base.scss */
+#header-log-in:after {
+  content: "•";
+  margin: 0 5px 0 8px;
+}
+
+/* Content */
+/* line 87, ../../sass/base.scss */
+#content {
+  background-color: #f8f7f1;
+  color: #1f2026;
+  padding: 15px;
+}
+
+/* Footer */
+/* line 94, ../../sass/base.scss */
+#footer {
+  width: 100%;
+  text-align: center;
 }
