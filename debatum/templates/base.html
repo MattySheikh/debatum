@@ -1,0 +1,24 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}Default Title{% endblock %}</title>
+
+	<!-- Core CSS files -->
+	<link rel="stylesheet" type="text/css" href="{% static 'stylesheets/base.css' %}" />
+
+	<!-- Include page specific css -->
+	{% for file in css %}
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}stylesheets/{{ file }}.css" />
+	{% endfor %}
+</head>
+
+<body>
+	<div id="header">{% block header %}{% endblock %}</div>
+
+	<div id="content">{% block content %}{% endblock %}</div>
+
+	<div id="footer">{% block footer %}{% endblock %}</div>
+</body>
+</html>
