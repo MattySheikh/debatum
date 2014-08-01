@@ -1,6 +1,20 @@
+<!-- Begin view info -->
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %} The Homepage {% endblock %}
+<!-- End view info -->
+
+
+<!-- Begin homepage content -->
 {% block content %}
-This is my homepage
+<div class="welcome">
+	Welcome to Debatum
+	<div class="description">
+		We are a conversation forum that allows users to debate, cite, and critique others' arguments.
+	</div>
+</div>
+<input type="button" id="begin-convo" class="standard-button" value="Begin A Conversation" />
+<input type="button" id="begin-convo" class="standard-button" value="Search For A Conversation" />
+
 {% endblock %}
+<!-- End homepage content -->

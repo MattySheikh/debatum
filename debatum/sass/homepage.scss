@@ -1,3 +1,6 @@
-body {
-	color: green !important;
+@import "variables";
+
+.welcome {
+	margin: 0 auto;
+	color: $baseGreen;
 }

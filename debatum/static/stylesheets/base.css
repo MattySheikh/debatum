@@ -1,4 +1,52 @@
-/* line 1, ../../sass/base.scss */
+/* line 3, ../../sass/base.scss */
 body {
-  color: red;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+  color: #151515;
+  background: url("/static/images/background.png");
+}
+
+/* line 11, ../../sass/base.scss */
+input[type="button"] {
+  cursor: pointer;
+}
+
+/* line 15, ../../sass/base.scss */
+#header {
+  padding: 15px;
+  background-color: #63cb31;
+  color: #151515;
+  border-bottom: 1px solid #2f681f;
+}
+
+/* line 22, ../../sass/base.scss */
+#header-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 27, ../../sass/base.scss */
+.name {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50%;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+/* line 35, ../../sass/base.scss */
+.standard-button {
+  border-radius: 5px;
+  border: 1px solid #151515;
+  color: #151515;
+  background-color: #63cb31;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* line 44, ../../sass/base.scss */
+.standard-button:hover {
+  transition: .3s;
+  background-color: #51a628;
 }

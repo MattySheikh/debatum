@@ -1,3 +1,47 @@
+@import "variables";
+
 body {
-	color: red;
+	margin: 0;
+	font-size: 16px;
+	font-family: $baseFont, sans-serif;
+	color: $baseDark;
+	background: url('/static/images/background.png');
+}
+
+input[type="button"] {
+	cursor: pointer;
+}
+
+#header {
+	padding: 15px;
+	background-color: $baseGreen;
+	color: $baseDark;
+	border-bottom: 1px solid $baseBorder;
+}
+
+#header-bar {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.name {
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 50%;
+	vertical-align: middle;
+	font-size: 30px;
+}
+
+.standard-button {
+	border-radius: 5px;
+	border: 1px solid $baseDark;
+	color: $baseDark;
+	background-color: $baseGreen;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.standard-button:hover {
+	transition: .3s;
+	background-color: $baseMidGreen;
 }

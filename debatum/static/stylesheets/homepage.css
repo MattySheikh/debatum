@@ -1,4 +1,5 @@
-/* line 1, ../../sass/homepage.scss */
-body {
-  color: green !important;
+/* line 3, ../../sass/homepage.scss */
+.welcome {
+  margin: 0 auto;
+  color: #63cb31;
 }
