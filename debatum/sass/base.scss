@@ -16,7 +16,21 @@ e {
 
 /* Buttons */
 input[type="button"] {
+	&:focus {
+		outline: 0;
+	}
 	cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+	&:focus {
+		outline: 0;
+		border-color: $baseWhite;
+		border: 1px solid $baseGreen;
+	}
+	border: 1px solid $baseBlack;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	padding: 8px;
 }
 
 .standard-button {
@@ -75,7 +89,7 @@ input[type="button"] {
 
 .header-right {
 	float: right;
-	padding-top: 12px;	
+	padding-top: 12px;
 }
 
 #header-log-in:after {
@@ -94,4 +108,31 @@ input[type="button"] {
 #footer {
 	width: 100%;
 	text-align: center;
+}
+
+/* Log In */
+.login-or-signup-wrapper {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid $baseWhite;
+	max-width: 330px;
+	margin: 0 auto;
+}
+
+.line-below {
+	margin: 10px;
+	border-bottom: 1px solid $baseWhite;
+}
+
+.login-welcome {
+	margin: 2px 0 7px;
+}
+
+#signup-info {
+	text-align: center;
+}
+
+.signup-field {
+	display: block;
+	margin: 5px auto;
 }
