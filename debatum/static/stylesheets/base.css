@@ -129,67 +129,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 /* Log In */
-/* line 114, ../../sass/base.scss */
-.box-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-}
-
-/* line 125, ../../sass/base.scss */
-.box-blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: .6;
-  -ms-filter: "alpha(opacity=" 60 ")";
-  filter: alpha(opacity=60);
-  zoom: 1;
-}
-
-/* line 138, ../../sass/base.scss */
-.box-inner {
-  position: relative;
-  height: auto;
-  min-height: 100%;
-  text-align: center;
-  top: 26%;
-}
-
-/* line 146, ../../sass/base.scss */
-.actual-box {
-  height: auto;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  overflow: auto;
-  z-index: 6000;
-  margin-top: 14px;
-  background: white;
-  position: relative;
-  display: inline-block;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  min-width: 600px\9;
-}
-
-/* line 165, ../../sass/base.scss */
-.box-wrap {
-  display: none;
-}
-
-/* line 169, ../../sass/base.scss */
+/* line 115, ../../sass/base.scss */
 .login-or-signup-wrapper {
   background-color: #2f4349;
   display: none;
@@ -200,23 +140,23 @@ input[type="text"]:focus, input[type="password"]:focus {
   margin: 0 auto;
 }
 
-/* line 179, ../../sass/base.scss */
+/* line 125, ../../sass/base.scss */
 .line-below {
   margin: 10px;
   border-bottom: 1px solid #f8f7f1;
 }
 
-/* line 184, ../../sass/base.scss */
+/* line 130, ../../sass/base.scss */
 .login-welcome {
   margin: 2px 0 7px;
 }
 
-/* line 188, ../../sass/base.scss */
+/* line 134, ../../sass/base.scss */
 #signup-info {
   text-align: center;
 }
 
-/* line 192, ../../sass/base.scss */
+/* line 138, ../../sass/base.scss */
 .signup-field {
   display: block;
   margin: 5px auto;
