@@ -63,6 +63,7 @@ input[type="text"], input[type="password"] {
 .header-inline {
 	display: table-cell;
 	vertical-align: middle;
+	padding-top: 12px;
 }
 
 .header-name {
@@ -84,12 +85,12 @@ input[type="text"], input[type="password"] {
 }
 
 .header-left {
+	margin-top: -12px;
 	float: left;
 }
 
 .header-right {
 	float: right;
-	padding-top: 12px;
 }
 
 .header-log-in:after {
@@ -113,6 +114,7 @@ input[type="text"], input[type="password"] {
 /* Log In */
 
 .login-or-signup-wrapper {
+	display: none;
 	background-color: $baseDarkBlue;
 	display: none;
 	padding: 10px;
@@ -120,11 +122,6 @@ input[type="text"], input[type="password"] {
 	border: 1px solid $baseWhite;
 	max-width: 330px;
 	margin: 0 auto;
-}
-
-.line-below {
-	margin: 10px;
-	border-bottom: 1px solid $baseWhite;
 }
 
 .login-welcome {
@@ -135,7 +132,14 @@ input[type="text"], input[type="password"] {
 	text-align: center;
 }
 
-.signup-field {
-	display: block;
-	margin: 5px auto;
+.login-header {
+	margin-top: -4px;
+	display: none;
+}
+
+.close-login {
+	&:hover {
+		cursor: pointer;
+	}
+	padding: 3px;
 }
