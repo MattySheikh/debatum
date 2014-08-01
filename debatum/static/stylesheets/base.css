@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Body */
-/* line 4, ../../sass/base.scss */
 body {
   margin: 0;
   font-size: 16px;
@@ -9,36 +8,31 @@ body {
   color: #f8f7f1;
 }
 
-/* line 12, ../../sass/base.scss */
 e {
   color: #63995f;
   font-weight: bold;
 }
 
 /* Buttons */
-/* line 18, ../../sass/base.scss */
 input[type="button"] {
   cursor: pointer;
 }
-/* line 19, ../../sass/base.scss */
 input[type="button"]:focus {
   outline: 0;
 }
 
-/* line 25, ../../sass/base.scss */
 input[type="text"], input[type="password"] {
+  font-size: 12px;
   border: 1px solid #1f2026;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 8px;
 }
-/* line 26, ../../sass/base.scss */
 input[type="text"]:focus, input[type="password"]:focus {
   outline: 0;
   border-color: #f8f7f1;
   border: 1px solid #63995f;
 }
 
-/* line 36, ../../sass/base.scss */
 .standard-button {
   border-radius: 5px;
   border: 1px solid #1f2026;
@@ -48,35 +42,32 @@ input[type="text"]:focus, input[type="password"]:focus {
   font-size: 14px;
 }
 
-/* line 45, ../../sass/base.scss */
 .standard-button:hover {
   transition: .2s;
   background-color: #1f2026;
 }
 
 /* Header */
-/* line 51, ../../sass/base.scss */
 #header {
-  padding: 5px;
+  padding: 5px 20px;
   height: 50px;
   color: #f8f7f1;
   border-bottom: 1px solid #2f4349;
 }
 
-/* line 58, ../../sass/base.scss */
 #header-bar {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
-/* line 63, ../../sass/base.scss */
 .header-inline {
   display: table-cell;
   vertical-align: middle;
   padding-top: 12px;
+  background-color: #1f2026;
 }
 
-/* line 69, ../../sass/base.scss */
 .header-name {
   font-weight: bold;
   text-transform: uppercase;
@@ -86,36 +77,32 @@ input[type="text"]:focus, input[type="password"]:focus {
   padding-left: 15px;
 }
 
-/* line 78, ../../sass/base.scss */
 .header-action {
   cursor: pointer;
 }
 
-/* line 82, ../../sass/base.scss */
 #logo-svg {
   height: 50px;
   fill: #63995f;
 }
 
-/* line 87, ../../sass/base.scss */
 .header-left {
   margin-top: -12px;
-  float: left;
+  position: absolute;
+  left: 20px;
 }
 
-/* line 92, ../../sass/base.scss */
 .header-right {
-  float: right;
+  position: absolute;
+  right: 20px;
 }
 
-/* line 96, ../../sass/base.scss */
 .header-log-in:after {
   content: "•";
   margin: 0 5px 0 8px;
 }
 
 /* Content */
-/* line 102, ../../sass/base.scss */
 #content {
   background-color: #f8f7f1;
   color: #1f2026;
@@ -123,14 +110,12 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 /* Footer */
-/* line 109, ../../sass/base.scss */
 #footer {
   width: 100%;
   text-align: center;
 }
 
 /* Log In */
-/* line 116, ../../sass/base.scss */
 .login-or-signup-wrapper {
   display: none;
   background-color: #2f4349;
@@ -142,22 +127,48 @@ input[type="text"]:focus, input[type="password"]:focus {
   margin: 0 auto;
 }
 
-/* line 127, ../../sass/base.scss */
 #signup-info {
   text-align: center;
 }
 
-/* line 131, ../../sass/base.scss */
 .login-header {
   margin-top: -4px;
   display: none;
 }
 
-/* line 136, ../../sass/base.scss */
 .close-login {
   padding: 3px;
 }
-/* line 137, ../../sass/base.scss */
 .close-login:hover {
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .header-left, .header-right {
+    display: block;
+  }
+
+  .login-header {
+    padding: 5px;
+  }
+
+  .login-form .close-login {
+    position: absolute;
+    right: -17px;
+    top: 15px;
+  }
+
+  .signup-field {
+    display: block;
+  }
+
+  .signup-form {
+    margin: -10px 0 0 -20px;
+    background-color: #1f2026;
+    text-align: center;
+  }
+  .signup-form .close-login {
+    position: absolute;
+    right: 10px;
+  }
 }

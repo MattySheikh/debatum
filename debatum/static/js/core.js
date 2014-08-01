@@ -3,13 +3,13 @@
 	var toggleLogin = function() {
 		var $this = $(this);
 		$this.hide();
-		$this.siblings('.login-header').fadeIn(200).find('.login-active').focus();
+		$this.siblings('.login-header').slideDown(100).find('.login-active').focus();
 		$this.parent().siblings('.header-inline').hide();
 	};
 
 	var closeLogin = function() {
 		$('.login-header').hide();
-		$('.header-inline, .header-action').fadeIn(200);
+		$('.header-inline, .header-action').show();
 	}
 	$d
 	.on('click', '.header-action', toggleLogin)
