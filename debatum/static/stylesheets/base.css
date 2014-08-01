@@ -143,26 +143,21 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 /* line 127, ../../sass/base.scss */
-.login-welcome {
-  margin: 2px 0 7px;
-}
-
-/* line 131, ../../sass/base.scss */
 #signup-info {
   text-align: center;
 }
 
-/* line 135, ../../sass/base.scss */
+/* line 131, ../../sass/base.scss */
 .login-header {
   margin-top: -4px;
   display: none;
 }
 
-/* line 140, ../../sass/base.scss */
+/* line 136, ../../sass/base.scss */
 .close-login {
   padding: 3px;
 }
-/* line 141, ../../sass/base.scss */
+/* line 137, ../../sass/base.scss */
 .close-login:hover {
   cursor: pointer;
 }

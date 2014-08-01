@@ -3,7 +3,7 @@
 	var toggleLogin = function() {
 		var $this = $(this);
 		$this.hide();
-		$this.siblings('.login-header').fadeIn(200);
+		$this.siblings('.login-header').fadeIn(200).find('.login-active').focus();
 		$this.parent().siblings('.header-inline').hide();
 	};
 
