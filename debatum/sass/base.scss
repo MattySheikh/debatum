@@ -152,7 +152,7 @@ input[type="text"], input[type="password"] {
 	.login-header {
 		padding: 5px;
 	}
-	
+
 	.login-form {
 		.close-login {
 			position: absolute;
@@ -160,7 +160,7 @@ input[type="text"], input[type="password"] {
 			top: 15px;
 		}
 	}
-	.signup-field {
+	.signup-field, .login-field {
 		display: block;
 	}
 
@@ -173,5 +173,30 @@ input[type="text"], input[type="password"] {
 		margin: -10px 0 0 -20px;
 		background-color: $baseBlack;
 		text-align: center;
+	}
+}
+
+@media (max-width: 320px) {
+	#header {
+		height: auto;
+	}
+
+	.header-left, .header-right {
+		display: block;
+		position: relative;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.header-inline {
+		margin-top: 5px;
+		display: inline-block;
+	}
+
+
+	.welcome-buttons > * {
+		display: block;
+		margin: 0 auto;
 	}
 }

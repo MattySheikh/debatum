@@ -158,7 +158,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     top: 15px;
   }
 
-  .signup-field {
+  .signup-field, .login-field {
     display: block;
   }
 
@@ -170,5 +170,28 @@ input[type="text"]:focus, input[type="password"]:focus {
   .signup-form .close-login {
     position: absolute;
     right: 10px;
+  }
+}
+@media (max-width: 320px) {
+  #header {
+    height: auto;
+  }
+
+  .header-left, .header-right {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .header-inline {
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  .welcome-buttons > * {
+    display: block;
+    margin: 0 auto;
   }
 }
