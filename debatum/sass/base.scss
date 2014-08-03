@@ -153,23 +153,20 @@ input[type="text"], input[type="password"] {
 		padding: 5px;
 	}
 
-	.login-form {
-		.close-login {
-			position: absolute;
-			right: -17px;
-			top: 15px;
-		}
+	.close-login {
+		position: absolute;
+		right: 10px;
 	}
+
+	.login-form {
+		text-align: center;
+	}
+
 	.signup-field, .login-field {
 		display: block;
 	}
 
 	.signup-form {
-		.close-login {
-			position: absolute;
-			right: 10px;
-		}
-
 		margin: -10px 0 0 -20px;
 		background-color: $baseBlack;
 		text-align: center;
@@ -192,11 +189,5 @@ input[type="text"], input[type="password"] {
 	.header-inline {
 		margin-top: 5px;
 		display: inline-block;
-	}
-
-
-	.welcome-buttons > * {
-		display: block;
-		margin: 0 auto;
 	}
 }

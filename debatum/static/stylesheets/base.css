@@ -152,10 +152,13 @@ input[type="text"]:focus, input[type="password"]:focus {
     padding: 5px;
   }
 
-  .login-form .close-login {
+  .close-login {
     position: absolute;
-    right: -17px;
-    top: 15px;
+    right: 10px;
+  }
+
+  .login-form {
+    text-align: center;
   }
 
   .signup-field, .login-field {
@@ -166,10 +169,6 @@ input[type="text"]:focus, input[type="password"]:focus {
     margin: -10px 0 0 -20px;
     background-color: #1f2026;
     text-align: center;
-  }
-  .signup-form .close-login {
-    position: absolute;
-    right: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -188,10 +187,5 @@ input[type="text"]:focus, input[type="password"]:focus {
   .header-inline {
     margin-top: 5px;
     display: inline-block;
-  }
-
-  .welcome-buttons > * {
-    display: block;
-    margin: 0 auto;
   }
 }
