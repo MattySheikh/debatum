@@ -1,0 +1,1 @@
+web: gunicorn debatum.wsgi --log-file -
