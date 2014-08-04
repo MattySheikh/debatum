@@ -75,7 +75,7 @@ input[type="text"], input[type="password"] {
 	line-height: 50%;
 	vertical-align: middle;
 	font-size: 30px;
-	padding-left: 15px;
+	padding-left: 8px;
 }
 
 .header-action {
@@ -101,6 +101,11 @@ input[type="text"], input[type="password"] {
 .header-log-in:after {
 	content: "•";
 	margin: 0 5px 0 8px;
+}
+
+.debatum-logo {
+	display: table-cell;
+	width: 50px;
 }
 
 /* Links */
