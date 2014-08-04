@@ -1,0 +1,45 @@
+<!-- Begin view info -->
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} Debatum {% endblock %}
+<!-- End view info -->
+
+
+<!-- Begin homepage content -->
+{% block content %}
+<div id="welcome-wrapper" class="home-section-wrapper">
+	<div class="welcome">
+		<span class="section-title">Welcome to <e>Debatum</e></span>
+		<div class="welcome-description">
+			We are a <e>conversation</e> forum that allows users to <e>debate</e>, <e>cite</e>, and <e>critique</e> each other's arguments.
+		</div>
+	</div>
+	<div class="welcome-buttons">
+		<input type="button" class="welcome-begin welcome-submit standard-button" value="Begin A Conversation" />
+		OR
+		<input type="button" class="welcome-begin welcome-search standard-button" value="Search For One" />
+	</div>
+</div>
+
+<div id="home-submit-wrapper" class="action-section home-section-wrapper">
+	<div id="home-categories">
+		<div class="action-step" id="categories-tabs">
+			<div class="section-title">Select a <e>Topic</e></div>
+			{% for topic in topic_list %}
+			<input type="button" class="category-tab standard-button" value="{{ topic }}" />
+			{% endfor %}
+		</div>
+		<div class="action-step" id="topic-submit">
+			<div class="section-title">What do you want to <e>discuss</e>?</e></div>
+			<input type="text" class="topic-submit-data topic-submit-title" placeholder="Your Title" />
+			<input type="text" class="topic-submit-data topic-submit-link" placeholder="Link" />
+			<textarea class="topic-submit-data topic-submit-text" rows="8" cols="50" placeholder="Your Argument"></textarea>
+		</div>
+	</div>
+</div>
+<div id="home-search-wrapper" class="action-section home-section-wrapper">
+	<div class="home-step">
+	</div>
+</div>
+{% endblock %}
+<!-- End homepage content -->

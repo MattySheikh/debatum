@@ -1,7 +1,7 @@
 @import "variables";
 
 /* Welcome */
-.welcome-wrapper {
+.home-section-wrapper {
 	font-size: 18px;
 	text-align: center;
 }
@@ -10,13 +10,36 @@
 	font-size: 25px;
 }
 
-.big-welcome {
+
+.welcome-buttons {
+	padding: 15px;
+}
+
+.section-title {
 	font-size: 45px;
 	font-weight: bold;
 }
 
-.welcome-buttons {
-	padding: 15px;
+/* Submitting New Topic */
+.action-section, .action-step {
+	display: none;
+}
+
+.active-step {
+	display: block;
+}
+
+#home-categories {
+	width: 500px;
+	margin: 0 auto;
+}
+.topic-submit-data {
+	display: block;
+	width: 100%;
+}
+
+.topic-submit-text {
+	padding: 8px;
 }
 
 @media (max-width: 700px) {

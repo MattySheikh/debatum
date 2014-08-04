@@ -22,7 +22,7 @@ input[type="button"] {
 	cursor: pointer;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], textarea {
 	&:focus {
 		outline: 0;
 		border-color: $baseWhite;

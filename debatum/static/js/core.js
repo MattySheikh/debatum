@@ -1,5 +1,6 @@
-(function(document) {
-	var $d = $(document);
+(function(document, window) {
+	window.$d = $(document);
+	window.$w = $(window);
 	var toggleLogin = function() {
 		var $this = $(this);
 		$this.hide();
@@ -14,4 +15,4 @@
 	$d
 	.on('click', '.header-action', toggleLogin)
 	.on('click', '.close-login', closeLogin)
-})(document);
+})(document, window);
