@@ -103,6 +103,12 @@ input[type="text"], input[type="password"] {
 	margin: 0 5px 0 8px;
 }
 
+/* Links */
+.link-no-style {
+	color: inherit;
+	text-decoration: none;
+}
+
 /* Content */
 #content {
 	background-color: $baseWhite;
