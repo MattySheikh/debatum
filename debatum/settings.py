@@ -30,43 +30,27 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'debatum'
+	'django.contrib.admin',
+	'django.contrib.auth',
+	'django.contrib.contenttypes',
+	'django.contrib.sessions',
+	'django.contrib.messages',
+	'django.contrib.staticfiles',
+	'debatum'
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	'django.contrib.sessions.middleware.SessionMiddleware',
+	'django.middleware.common.CommonMiddleware',
+	'django.middleware.csrf.CsrfViewMiddleware',
+	'django.contrib.auth.middleware.AuthenticationMiddleware',
+	'django.contrib.messages.middleware.MessageMiddleware',
+	'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'debatum.urls'
 
 WSGI_APPLICATION = 'debatum.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'debatum',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
-        'PORT': '5432'
-    }
-}
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -90,11 +74,11 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'debatum/templates')]
 
 # Parse database configuration from $DATABASE_URL
-# import dj_database_url
-# DATABASES = {
-#     'default': dj_database_url.config(),
-#     'ENGINE': 'django.db.backends.postgresql_psycopg2'
-# }
+import dj_database_url
+DATABASES = {
+	'default': dj_database_url.config(),
+	'ENGINE': 'django.db.backends.postgresql_psycopg2'
+}
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -109,5 +93,10 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+	os.path.join(BASE_DIR, 'static'),
 )
+
+try:
+	from local_settings import *
+except ImportError as e:
+	pass
