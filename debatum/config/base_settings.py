@@ -45,11 +45,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'debatum.urls'
 
-<<<<<<< HEAD:debatum/settings.py
 WSGI_APPLICATION = 'debatum.wsgi.application'
 
-=======
->>>>>>> 2fad6e8cb1328dee4b143c30b681ab970e99aee2:debatum/config/base_settings.py
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -91,13 +88,4 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
 	os.path.join(BASE_DIR, 'static'),
-<<<<<<< HEAD:debatum/settings.py
 )
-
-try:
-	from local_settings import *
-except ImportError as e:
-	pass
-=======
-)
->>>>>>> 2fad6e8cb1328dee4b143c30b681ab970e99aee2:debatum/config/base_settings.py
