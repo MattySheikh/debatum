@@ -1,6 +1,6 @@
 from debatum.config.base_settings import *
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
 DATABASES = {
