@@ -1,4 +1,4 @@
-from .base_settings import *
+from debatum.config.base_settings import *
 DEBUG = False
 TEMPLATE_DEBUG = False
 # Parse database configuration from $DATABASE_URL

@@ -1,1 +1,1 @@
-from .production_settings import *
+from debatum.config.production_settings import *
