@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+BASE_DIR = os.path.dirname(os.path.realpath(os.path.dirname(__file__) + "/.."))
 
 
 # Quick-start development settings - unsuitable for production
@@ -77,7 +78,6 @@ ALLOWED_HOSTS = ['*']
 
 # Static asset configuration
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-BASE_DIR = os.path.dirname(os.path.realpath(os.path.dirname(__file__) + "/.."))
 STATIC_URL = '/static/'
 
 STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles/')
