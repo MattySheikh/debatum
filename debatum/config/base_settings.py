@@ -84,3 +84,5 @@ STATIC_ROOT= os.path.join(BASE_DIR,'debatum/staticfiles/')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'debatum/static/'),
 )
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'debatum.config.local_settings'
